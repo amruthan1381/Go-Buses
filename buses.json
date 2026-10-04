@@ -1,0 +1,102 @@
+[
+  {
+    "busName": "GreenLine Express",
+    "from": "Chennai",
+    "to": "Bangalore",
+    "departure": "21:30",
+    "arrival": "06:00",
+    "busType": "AC Sleeper",
+    "price": 699,
+    "availableSeats": 18
+  },
+  {
+    "busName": "Metro Travels",
+    "from": "Chennai",
+    "to": "Bangalore",
+    "departure": "22:15",
+    "arrival": "06:30",
+    "busType": "AC Seater",
+    "price": 599,
+    "availableSeats": 24
+  },
+  {
+    "busName": "Southern Star",
+    "from": "Chennai",
+    "to": "Coimbatore",
+    "departure": "20:00",
+    "arrival": "05:30",
+    "busType": "AC Sleeper",
+    "price": 649,
+    "availableSeats": 12
+  },
+  {
+    "busName": "Kovai Express",
+    "from": "Chennai",
+    "to": "Coimbatore",
+    "departure": "21:45",
+    "arrival": "06:15",
+    "busType": "AC Seater",
+    "price": 549,
+    "availableSeats": 29
+  },
+  {
+    "busName": "Sea Breeze Travels",
+    "from": "Chennai",
+    "to": "Pondicherry",
+    "departure": "07:30",
+    "arrival": "10:30",
+    "busType": "AC Seater",
+    "price": 299,
+    "availableSeats": 20
+  },
+  {
+    "busName": "East Coast Bus",
+    "from": "Chennai",
+    "to": "Pondicherry",
+    "departure": "17:00",
+    "arrival": "20:00",
+    "busType": "Non-AC Seater",
+    "price": 249,
+    "availableSeats": 32
+  },
+  {
+    "busName": "Temple Route",
+    "from": "Chennai",
+    "to": "Madurai",
+    "departure": "19:30",
+    "arrival": "06:30",
+    "busType": "AC Sleeper",
+    "price": 749,
+    "availableSeats": 15
+  },
+  {
+    "busName": "Tamil Express",
+    "from": "Chennai",
+    "to": "Madurai",
+    "departure": "20:45",
+    "arrival": "07:00",
+    "busType": "AC Seater",
+    "price": 649,
+    "availableSeats": 21
+  },
+  {
+    "busName": "Garden City Travels",
+    "from": "Bangalore",
+    "to": "Chennai",
+    "departure": "21:00",
+    "arrival": "06:00",
+    "busType": "AC Sleeper",
+    "price": 699,
+    "availableSeats": 16
+  },
+  {
+    "busName": "Western Express",
+    "from": "Coimbatore",
+    "to": "Chennai",
+    "departure": "20:30",
+    "arrival": "05:45",
+    "busType": "AC Sleeper",
+    "price": 649,
+    "availableSeats": 19
+  }
+]

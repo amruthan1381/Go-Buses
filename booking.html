@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoBus | Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">🚌 GoBus</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="routes.html">Routes</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-header">
+      <p class="eyebrow">BOOK YOUR TRIP</p>
+      <h1>Select your seat</h1>
+      <p>Choose a seat and enter your basic passenger details.</p>
+    </section>
+
+    <section class="booking-layout">
+      <div class="seat-card">
+        <h2>Seat layout</h2>
+        <p class="muted">Selected seats are shown in blue.</p>
+        <div class="bus-layout">
+          <div class="driver">🚍 Driver</div>
+          <div class="seats">
+            <button class="seat" onclick="selectSeat(this)">1A</button>
+            <button class="seat" onclick="selectSeat(this)">1B</button>
+            <span></span>
+            <button class="seat" onclick="selectSeat(this)">1C</button>
+            <button class="seat occupied">1D</button>
+
+            <button class="seat" onclick="selectSeat(this)">2A</button>
+            <button class="seat" onclick="selectSeat(this)">2B</button>
+            <span></span>
+            <button class="seat occupied">2C</button>
+            <button class="seat" onclick="selectSeat(this)">2D</button>
+
+            <button class="seat" onclick="selectSeat(this)">3A</button>
+            <button class="seat" onclick="selectSeat(this)">3B</button>
+            <span></span>
+            <button class="seat" onclick="selectSeat(this)">3C</button>
+            <button class="seat" onclick="selectSeat(this)">3D</button>
+          </div>
+        </div>
+        <p id="selectedSeat" class="selected-message">No seat selected</p>
+      </div>
+
+      <form class="form-card" onsubmit="confirmBooking(event)">
+        <h2>Passenger details</h2>
+        <label>Name</label>
+        <input id="passengerName" type="text" required placeholder="Your name">
+        <label>Email</label>
+        <input type="email" required placeholder="you@example.com">
+        <label>Phone</label>
+        <input type="tel" required placeholder="10-digit phone number">
+        <button class="btn" type="submit">Confirm Booking</button>
+        <p id="bookingMessage" class="success"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 GoBus — Student project for AWS Club</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

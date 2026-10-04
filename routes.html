@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoBus | Bus Routes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">🚌 GoBus</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="routes.html">Routes</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-header">
+      <p class="eyebrow">BUS SEARCH</p>
+      <h1>Available buses</h1>
+      <p>Choose a route and find a bus that fits your journey.</p>
+    </section>
+
+    <section class="filters">
+      <input id="fromFilter" type="text" placeholder="From">
+      <input id="toFilter" type="text" placeholder="To">
+      <button class="btn" onclick="filterBuses()">Search</button>
+      <button class="btn secondary" onclick="showAll()">Show All</button>
+    </section>
+
+    <section id="busList" class="bus-list"></section>
+  </main>
+
+  <footer>
+    <p>© 2026 GoBus — Student project for AWS Club</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

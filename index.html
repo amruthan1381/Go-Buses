@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoBus | Travel Made Easy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">🚌 GoBus</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="routes.html">Routes</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">SAFE • SIMPLE • COMFORTABLE</p>
+        <h1>Travel farther.<br><span>Travel smarter.</span></h1>
+        <p class="hero-text">Find comfortable buses, compare routes and plan your next journey with GoBus.</p>
+
+        <form class="search-box" action="routes.html">
+          <div class="field">
+            <label for="from">From</label>
+            <input id="from" name="from" type="text" placeholder="Chennai">
+          </div>
+          <div class="field">
+            <label for="to">To</label>
+            <input id="to" name="to" type="text" placeholder="Bangalore">
+          </div>
+          <div class="field">
+            <label for="date">Travel date</label>
+            <input id="date" name="date" type="date">
+          </div>
+          <button class="btn" type="submit">Search Buses</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">POPULAR</p>
+          <h2>Popular routes</h2>
+        </div>
+        <a href="routes.html" class="text-link">View all routes →</a>
+      </div>
+
+      <div class="route-grid">
+        <article class="route-card">
+          <div class="route-icon">🌆</div>
+          <h3>Chennai → Bangalore</h3>
+          <p>Daily buses • From ₹599</p>
+          <a href="routes.html" class="card-link">Explore route</a>
+        </article>
+        <article class="route-card">
+          <div class="route-icon">🌴</div>
+          <h3>Chennai → Coimbatore</h3>
+          <p>Daily buses • From ₹549</p>
+          <a href="routes.html" class="card-link">Explore route</a>
+        </article>
+        <article class="route-card">
+          <div class="route-icon">🌊</div>
+          <h3>Chennai → Pondicherry</h3>
+          <p>Daily buses • From ₹299</p>
+          <a href="routes.html" class="card-link">Explore route</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section light-section">
+      <div class="section-heading centered">
+        <div>
+          <p class="eyebrow">WHY GOBUS?</p>
+          <h2>Everything you need for a smooth trip</h2>
+        </div>
+      </div>
+      <div class="features">
+        <div class="feature"><span>🔎</span><h3>Easy Search</h3><p>Find buses by route and travel date.</p></div>
+        <div class="feature"><span>💺</span><h3>Comfortable Travel</h3><p>Choose from seater and sleeper buses.</p></div>
+        <div class="feature"><span>🎟️</span><h3>Simple Booking</h3><p>Select your bus and preferred seat.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 GoBus — Student project for AWS Club</p>
+  </footer>
+</body>
+</html>

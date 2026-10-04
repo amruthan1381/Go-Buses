@@ -1,0 +1,420 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #ff9900;
+  --dark: #111827;
+  --text: #263238;
+  --muted: #667085;
+  --light: #f6f8fb;
+  --white: #ffffff;
+  --border: #e5e7eb;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  border-bottom: 1px solid var(--border);
+  background: white;
+}
+
+.logo {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.hero {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 70px 7%;
+  background: linear-gradient(135deg, #fff8ec 0%, #ffffff 55%, #f3f7fb 100%);
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.eyebrow {
+  color: #b56600;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  line-height: 0.98;
+  color: var(--dark);
+  max-width: 750px;
+}
+
+.hero h1 span {
+  color: #d97706;
+}
+
+.hero-text {
+  max-width: 570px;
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin: 24px 0 34px;
+}
+
+.search-box {
+  background: white;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 15px 45px rgba(17, 24, 39, 0.12);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 12px;
+  max-width: 1050px;
+}
+
+.field {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.field input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 0.95rem;
+  margin-top: 3px;
+}
+
+.btn {
+  border: 0;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #111;
+  padding: 0 22px;
+  min-height: 50px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.btn.secondary {
+  background: #eef0f3;
+}
+
+.section {
+  padding: 80px 7%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.light-section {
+  max-width: none;
+  background: var(--light);
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.section-heading.centered {
+  justify-content: center;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--dark);
+}
+
+.text-link, .card-link {
+  color: #a85d00;
+  font-weight: 700;
+}
+
+.route-grid, .features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.route-card, .feature, .about-box, .seat-card, .form-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.route-icon {
+  font-size: 2.5rem;
+  margin-bottom: 18px;
+}
+
+.route-card p, .feature p, .about-box p {
+  color: var(--muted);
+  margin: 8px 0 20px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature span {
+  font-size: 2rem;
+}
+
+.page {
+  max-width: 1150px;
+  margin: auto;
+  padding: 70px 7%;
+  min-height: calc(100vh - 145px);
+}
+
+.page-header {
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  color: var(--dark);
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.page-header > p:last-child {
+  color: var(--muted);
+  max-width: 650px;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.filters input, .form-card input, .contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  outline: none;
+  font: inherit;
+}
+
+.filters input:focus, input:focus, textarea:focus {
+  border-color: var(--primary);
+}
+
+.bus-list {
+  display: grid;
+  gap: 15px;
+}
+
+.bus-card {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 0.8fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: white;
+}
+
+.bus-card h3 {
+  color: var(--dark);
+}
+
+.bus-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #a85d00;
+}
+
+.booking-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 25px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.bus-layout {
+  margin-top: 25px;
+  background: var(--light);
+  padding: 22px;
+  border-radius: 15px;
+  max-width: 430px;
+}
+
+.driver {
+  padding: 12px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.seats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 25px repeat(2, 1fr);
+  gap: 10px;
+}
+
+.seat {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.seat.occupied {
+  background: #d1d5db;
+  cursor: not-allowed;
+}
+
+.selected-message {
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-card h2 {
+  margin-bottom: 12px;
+}
+
+.success {
+  color: #16803c;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.contact-form {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+footer {
+  padding: 25px 7%;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 850px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .search-box, .bus-card, .booking-layout, .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .route-grid, .features {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .bus-card {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero, .section, .page {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+}

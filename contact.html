@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoBus | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">🚌 GoBus</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="routes.html">Routes</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-header">
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h1>Contact us</h1>
+      <p>Have a question about a route? Send us a message.</p>
+    </section>
+
+    <form class="contact-form" onsubmit="sendMessage(event)">
+      <label>Name</label>
+      <input type="text" required placeholder="Your name">
+      <label>Email</label>
+      <input type="email" required placeholder="you@example.com">
+      <label>Message</label>
+      <textarea rows="6" required placeholder="Write your message..."></textarea>
+      <button class="btn" type="submit">Send Message</button>
+      <p id="contactMessage" class="success"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2026 GoBus — Student project for AWS Club</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
